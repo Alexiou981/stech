@@ -4,8 +4,8 @@
 // * edited by Evangelos Alexiou - 1618795
 // defines pins numbers
 
-const int val00 = A2; // sensor 01
-const int val01 = A3; // sensor 02
+const int val00 = A2; // sensor 01 (Added by Evangelos)
+const int val01 = A3; // sensor 02 (Added by Evangelos)
 const int trigPin = 9;
 const int echoPin = 10;
 // defines variables
@@ -47,6 +47,7 @@ duration = pulseIn(echoPin, HIGH);
 distance= duration*0.034/2;
 //distance = map(distance, 0, 2180, 100, 500);
 
+//(Edited by Evangelos)
 Serial.print(xPosition);
 Serial.print(",");
 Serial.print(yPosition);
