@@ -30,9 +30,9 @@ Serial.begin(9600); // Starts the serial communication
 
 void loop() {
 xPosition = analogRead(xPin);
-xPosition = map(xPosition, 0, 1023, 0, 200);
+xPosition = map(xPosition, 0, 1023, 0, 200); //(Added by Evangelos)
 yPosition = analogRead(yPin);
-yPosition = map(yPosition, 0, 1023, 0, 200);
+yPosition = map(yPosition, 0, 1023, 0, 200); //(Added by Evangelos)
 Switch = digitalRead(butonPin);
 // Clears the trigPin
 digitalWrite(trigPin, LOW);
